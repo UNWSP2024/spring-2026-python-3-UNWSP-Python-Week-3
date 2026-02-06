@@ -13,7 +13,28 @@ def weight_conversion(weight):
     # Calculate the shipping charge.
     shippingCost = 0.0
     ######################
-    # WRITE YOUR CODE HERE
+    START PROGRAM
+
+DECLARE weight, rate, totalCost AS REAL
+
+DISPLAY "Enter the package weight:"
+INPUT weight
+
+IF weight <= 2 THEN
+    rate = 1.50
+ELSE IF weight <= 6 THEN
+    rate = 3.00
+ELSE IF weight <= 10 THEN
+    rate = 4.00
+ELSE
+    rate = 4.75
+END IF
+
+totalCost = weight * rate
+
+DISPLAY "Shipping cost is $", totalCost
+
+END PROGRAM
     ######################
     
     return shippingCost
